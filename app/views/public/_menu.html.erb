@@ -1,38 +1,71 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-					<a class="navbar-brand logo" href="http://www.alfaromeo.kubarazny.pl"></a>
-    </div>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="/"></a>
+        </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li><a href="public/">Start</a></li>
-				<li><a href="articles">Artykuły</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Galerie<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<% gallery_menu = Gallery.where(:visible => true).last(10) %>
-						<% gallery_menu.each do |gallery| %>
-						<li><%= link_to(gallery.name, {:action => 'galleries', :gallery_id => gallery.id}) %> </li>
-						<% end %>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategorie <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<% category_menu = Category.where(:visible => true).last(10) %>
-						<% category_menu.each do |category| %>
-						<li><%= link_to(category.name, {:action => 'categories', :category_id => category.id}) %> </li>
-						<% end %>
-					</ul>
-				</li>
-			</ul>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/">Start</a>
+                </li>
+                <li><%=link_to("Artykuły", {:action=>'articles'}) %>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galerie<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <% gallery_menu = Gallery.where(:visible => true).last(10) %>
+                        <% gallery_menu.each do |gallery| %>
+                        <li><%= link_to(gallery.name, {:action => 'galleries', :gallery_id => gallery.id}) %>
+                        </li>
+                        <% end %>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategorie
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <% category_menu = Category.where(:visible => true).last(10) %>
+                        <% category_menu.each do |category| %>
+                        <li><%= link_to(category.name, {:action => 'categories', :category_id => category.id}) %>
+                        </li>
+                        <% end %>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <% if user_signed_in? %>
+                <li>
+                    <%= link_to('Wyloguj', destroy_user_session_path, :method => :delete) %>
+                </li>
+            <% else %>
+                <li>
+                    <!-- <%= link_to('Login', new_user_session_path)  %> -->
+                    <%= link_to "Login", "#login", "data-toggle" => "modal", :class => 'btn btn-small' %>
+                </li>
+                <% end %>
+                <% if user_signed_in? %>
+                <li>
+
+                </li>
+                <li>
+                    <%= link_to(current_user.email, edit_user_registration_path) %>
+                </li>
+            <% else %>
+                <li>
+                    <!-- <%= link_to('Register', new_user_registration_path)  %> -->
+                    <%= link_to "Rejestracja", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-small' %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
