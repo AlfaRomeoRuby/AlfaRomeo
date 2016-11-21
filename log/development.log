@@ -35255,3 +35255,121 @@ Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-21 12:56:25 +0100
 Started GET "/assets/alfa.ttf" for 127.0.0.1 at 2016-11-21 12:56:25 +0100
 Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-21 12:56:25 +0100
 Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-21 12:56:25 +0100
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/environment.rb:5)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/environment.rb:5)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/environment.rb:5)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20161121115755)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "gallery_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_gallery_id" ON "comments" ("gallery_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_gallery_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_gallery_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161121115755"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_gallery_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_gallery_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pages_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pages_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/environment.rb:5)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/ALFAGITHUB/alfa/config/routes.rb:6)
+Started GET "/" for 127.0.0.1 at 2016-11-21 12:58:30 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (28.7ms)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered welcome/_login_modal.html.erb (39.5ms)
+  Rendered welcome/_sign_up_modal.html.erb (2.4ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (18.0ms)
+Completed 200 OK in 1227ms (Views: 1195.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-21 12:58:32 +0100
+Started GET "/public/galleries?gallery_id=6" for 127.0.0.1 at 2016-11-21 12:58:35 +0100
+Processing by PublicController#galleries as HTML
+  Parameters: {"gallery_id"=>"6"}
+  [1m[36mGallery Load (0.5ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering public/galleries.html.erb within layouts/public
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."gallery_id" = ?[0m  [["gallery_id", 6]]
+  Rendered public/galleries.html.erb within layouts/public (40.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered welcome/_login_modal.html.erb (4.0ms)
+  Rendered welcome/_sign_up_modal.html.erb (2.4ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (7.0ms)
+Completed 200 OK in 139ms (Views: 133.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-21 12:58:37 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-21 12:58:37 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-21 12:58:37 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-21 12:58:37 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-21 12:58:37 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-21 12:58:37 +0100
