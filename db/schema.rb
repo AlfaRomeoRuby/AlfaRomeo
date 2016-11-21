@@ -1,4 +1,3 @@
-# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -55,10 +54,8 @@ ActiveRecord::Schema.define(version: 20160326144012) do
     t.boolean  "visible",     default: true
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.index ["category_id"], name: "index_pages_on_category_id"
   end
-
-  add_index "pages", ["category_id"], name: "index_pages_on_category_id"
-  
 
   create_table "photos", force: :cascade do |t|
     t.integer  "gallery_id"
@@ -83,8 +80,7 @@ ActiveRecord::Schema.define(version: 20160326144012) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.index ["user"], name: "index_users_on_user"
   end
-
-  add_index "users", ["user"], name: "index_users_on_user"
 
 end

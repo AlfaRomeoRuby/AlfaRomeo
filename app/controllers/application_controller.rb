@@ -3,21 +3,21 @@ class ApplicationController < ActionController::Base
     # For APIs, you may want to use :null_session instead.
     protect_from_forgery with: :exception
 
-    def current_user
-        @current_user ||= User.find(session[:user_id]) if session[:user_id]
-    end
+    #def current_user
+    #    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+   # end
 
-    helper_method :current_user
+   # helper_method :current_user
 
-    private
+  #  private
 
-    def check_login
-        if session[:user_id]
-            return true
-        else
-            flash[:warning] = "Nie jesteś zalogowany!"
-            redirect_to(controller: 'access', action: 'login')
-            return false
-        end
-    end
+  #  def check_login
+  #      if session[:user_id]
+   #         return true
+  #      else
+  #          flash[:warning] = "Nie jesteś zalogowany!"
+  #          redirect_to(controller: 'access', action: 'login')
+  #          return false
+  #      end
+  #  end
 end

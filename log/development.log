@@ -13219,3 +13219,1363 @@ Processing by PublicController#index as */*
 Completed 200 OK in 750ms (Views: 677.7ms | ActiveRecord: 4.2ms)
 
 
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/alfaromeoruby/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/alfaromeoruby/config/routes.rb:5)
+Started GET "/" for 127.0.0.1 at 2016-11-11 14:59:52 +0100
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (29.0ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (12.1ms)
+Completed 200 OK in 2749ms (Views: 2726.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/assets/alfa.ttf" for 127.0.0.1 at 2016-11-11 14:59:55 +0100
+Started GET "/public/news?article_id=12" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Processing by PublicController#news as HTML
+  Parameters: {"article_id"=>"12"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering public/news.html.erb within layouts/public
+  Rendered public/news.html.erb within layouts/public (1.8ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.4ms)
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-11 14:59:57 +0100
+Started GET "/public/categories?category_id=1" for 127.0.0.1 at 2016-11-11 14:59:59 +0100
+Processing by PublicController#categories as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering public/categories.html.erb within layouts/public
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."category_id" = ? AND "pages"."visible" = ?[0m  [["category_id", 1], ["visible", true]]
+  Rendered public/categories.html.erb within layouts/public (28.3ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (4.5ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:00:00 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:00:00 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:00:00 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:00:00 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:00:00 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-11 15:00:00 +0100
+Started GET "/public/categories?category_id=3" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Processing by PublicController#categories as HTML
+  Parameters: {"category_id"=>"3"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering public/categories.html.erb within layouts/public
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."category_id" = ? AND "pages"."visible" = ?[0m  [["category_id", 3], ["visible", true]]
+  Rendered public/categories.html.erb within layouts/public (2.8ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (4.3ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-11 15:00:01 +0100
+Started GET "/public/" for 127.0.0.1 at 2016-11-11 15:00:18 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (9.3ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.2ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:00:19 +0100
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/alfaromeoruby/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at /home/qbek/projekty/alfaromeoruby/config/routes.rb:5)
+Started GET "/public/" for 127.0.0.1 at 2016-11-11 15:02:46 +0100
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (27.5ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (9.9ms)
+Completed 200 OK in 660ms (Views: 633.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:02:47 +0100
+Started GET "/" for 127.0.0.1 at 2016-11-11 15:02:50 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (14.1ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.7ms)
+Completed 200 OK in 60ms (Views: 56.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:02:51 +0100
+Started GET "/articles" for 127.0.0.1 at 2016-11-11 15:03:04 +0100
+Processing by ArticlesController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :check_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:03:04 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.1ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:05 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:05 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:05 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:05 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:05 +0100
+Started GET "/public/articles" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Processing by PublicController#articles as HTML
+  [1m[36mPage Load (0.3ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."visible" = ? ORDER BY "pages"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendering public/articles.html.erb within layouts/public
+  Rendered public/articles.html.erb within layouts/public (1.6ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.3ms)
+Completed 200 OK in 62ms (Views: 49.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-11 15:03:10 +0100
+Started GET "/admin" for 127.0.0.1 at 2016-11-11 15:03:28 +0100
+Processing by AccessController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :check_login rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:03:28 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.2ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:29 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:29 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:29 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:29 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:29 +0100
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.5ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:35 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:36 +0100
+Started GET "/" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (12.2ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.5ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:03:38 +0100
+Started GET "/public/" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (6.5ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (2.7ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:03:40 +0100
+Started GET "/public/public/articles" for 127.0.0.1 at 2016-11-11 15:03:42 +0100
+  
+AbstractController::ActionNotFound (The action 'public' could not be found for PublicController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.2ms)
+Started GET "/public/" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (6.6ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (2.9ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:03:48 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:03:49 +0100
+Started GET "/public/articles" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Processing by PublicController#articles as HTML
+  [1m[36mPage Load (0.2ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."visible" = ? ORDER BY "pages"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendering public/articles.html.erb within layouts/public
+  Rendered public/articles.html.erb within layouts/public (1.3ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.7ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-11 15:03:50 +0100
+Started GET "/public/" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (7.9ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.7ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:04:33 +0100
+Started GET "/public/admin" for 127.0.0.1 at 2016-11-11 15:04:37 +0100
+  
+AbstractController::ActionNotFound (The action 'admin' could not be found for PublicController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.3ms)
+Started GET "/public/" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (1.5ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (13.4ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.5ms)
+Completed 200 OK in 66ms (Views: 61.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:27 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:05:28 +0100
+Started GET "/admin" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Processing by AccessController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :check_login rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.2ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:29 +0100
+Started POST "/access/logging" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Processing by AccessController#logging as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JKKXx6Nzuk/6gzhump/Xa+c5csU4VtvDej+YwjjmLK3Qg9nYsEdwZv5x6w6PevAvJacTktaDAUNGkReMXzAAIw==", "user"=>"admin", "password"=>"[FILTERED]", "commit"=>"Zaloguj"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["user", "admin"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 23ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Processing by AccessController#index as HTML
+  Rendering access/index.html.erb within layouts/admin
+  Rendered access/index.html.erb within layouts/admin (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:35 +0100
+Started GET "/users" for 127.0.0.1 at 2016-11-11 15:05:38 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/admin
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY surname ASC, name ASC[0m
+  Rendered users/index.html.erb within layouts/admin (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:38 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:38 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:38 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:38 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:38 +0100
+Started GET "/galleries" for 127.0.0.1 at 2016-11-11 15:05:39 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/admin
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "galleries"[0m
+  [1m[36mGallery Load (0.1ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" ORDER BY galleries.position ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos" WHERE "photos"."gallery_id" = ?[0m  [["gallery_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos" WHERE "photos"."gallery_id" = ?[0m  [["gallery_id", 6]]
+  Rendered galleries/index.html.erb within layouts/admin (19.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Started GET "/assets/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Started GET "/categories" for 127.0.0.1 at 2016-11-11 15:05:40 +0100
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/admin
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY categories.position ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "pages" WHERE "pages"."category_id" = ?[0m  [["category_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "pages" WHERE "pages"."category_id" = ?[0m  [["category_id", 3]]
+  Rendered categories/index.html.erb within layouts/admin (7.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:41 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:41 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:41 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:41 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:41 +0100
+Started GET "/pages?category_id=1" for 127.0.0.1 at 2016-11-11 15:05:43 +0100
+Processing by PagesController#index as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPage Load (0.1ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."category_id" = ?[0m  [["category_id", 1]]
+  Rendering pages/index.html.erb within layouts/admin
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."page_id" = ?[0m  [["page_id", 4]]
+  Rendered pages/index.html.erb within layouts/admin (6.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 37.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:43 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:43 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:43 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:43 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:43 +0100
+Started GET "/access/logout" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.6ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:44 +0100
+Started GET "/access/public" for 127.0.0.1 at 2016-11-11 15:05:46 +0100
+  
+AbstractController::ActionNotFound (The action 'public' could not be found for AccessController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.5ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.5ms)
+Started GET "/access/public" for 127.0.0.1 at 2016-11-11 15:05:57 +0100
+  
+AbstractController::ActionNotFound (The action 'public' could not be found for AccessController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.7ms)
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.1ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+Started GET "/access/public" for 127.0.0.1 at 2016-11-11 15:05:59 +0100
+  
+AbstractController::ActionNotFound (The action 'public' could not be found for AccessController):
+  
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack (2.0.1) lib/rack/handler/webrick.rb:86:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+/home/qbek/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from const_missing at /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/http/mime_type.rb:52)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendering /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /home/qbek/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.8ms)
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.1ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:06:01 +0100
+Started GET "/access/login" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (1.3ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-3598a44d4c6ec016d76dc796536975c136b9cbff9e9f22216088b542fa658481.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/application.self-bd898eaab10e8c4706863f437c28fc86730f809bc86c3de04bb34e2fe1354439.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/lightbox.self-042def15f0ac7f3ffab0a772e2ca8cd84680e63ca9cb24c8dd0d8806321179cb.css?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/access.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/jquery-1.12.3.min.self-b62ac22841b2fab833820a8110ae75db06aabeaffcd25fccf49a6c1c33f04a9b.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/galleries.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/lightbox-2.6.min.self-04ce3884dd7a22298ec398bef7910ecc5414bb4792cb42d586996edfbd62b719.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/public.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/ckeditor/basepath.self-372981e38edca3246fca9dbb4263753ec0abddf9246f80fedb2fb4c46b46417c.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/test.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/ckeditor/ckeditor.self-3bf56bf393bee65859bc77ba70e26a11bb7e07f0991ba908d1e9a37446e7022b.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/ckeditor/jquery.self-592c793dde01441a6664743099017e3895c23594aa11e5c07c2892ee28726e58.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/ckeditor-jquery.self-6a3cf5192354f71615ac51034b3e97c20eda99643fcaf5bbe6d41ad59bd12167.js?body=1" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:06:16 +0100
+Started GET "/public" for 127.0.0.1 at 2016-11-11 15:06:17 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (5.6ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (2.8ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/bg2.jpg" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/assets/alfa.ttf" for 127.0.0.1 at 2016-11-11 15:06:18 +0100
+Started GET "/public/news?article_id=12" for 127.0.0.1 at 2016-11-11 15:06:20 +0100
+Processing by PublicController#news as HTML
+  Parameters: {"article_id"=>"12"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering public/news.html.erb within layouts/public
+  Rendered public/news.html.erb within layouts/public (1.7ms)
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (3.1ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/close.png" for 127.0.0.1 at 2016-11-11 15:06:21 +0100
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2016-11-11 15:06:21 +0100
+Started GET "/assets/prev.png" for 127.0.0.1 at 2016-11-11 15:06:21 +0100
+Started GET "/assets/next.png" for 127.0.0.1 at 2016-11-11 15:06:21 +0100
+Started GET "/assets/logo.png" for 127.0.0.1 at 2016-11-11 15:06:21 +0100
+Started GET "/assets/bg3.jpg" for 127.0.0.1 at 2016-11-11 15:06:21 +0100
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from load at C:/Ruby22-x64/bin/rake:23)
+  [1m[35m (159.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-11-11 16:48:14 UTC], ["updated_at", 2016-11-11 16:48:14 UTC]]
+  [1m[35m (80.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pages_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pages_on_category_id' AND type='index'
+[0m
+  [1m[35m (1.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_user' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_user' AND type='index'
+[0m
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+Started GET "/" for ::1 at 2016-11-11 17:49:36 +0100
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (80.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (46.0ms)
+Completed 200 OK in 18909ms (Views: 18790.5ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/alfa.ttf" for ::1 at 2016-11-11 17:49:56 +0100
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/assets/bg.jpg" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/assets/bg2.jpg" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/assets/loading.gif" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/assets/close.png" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/assets/prev.png" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/assets/next.png" for ::1 at 2016-11-11 17:49:57 +0100
+Started GET "/public/" for ::1 at 2016-11-11 17:49:59 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (22.0ms)
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (11.0ms)
+Completed 200 OK in 326ms (Views: 295.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/alfa.ttf" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/bg.jpg" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/bg2.jpg" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/close.png" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/loading.gif" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/prev.png" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/assets/next.png" for ::1 at 2016-11-11 17:50:00 +0100
+Started GET "/public/articles" for ::1 at 2016-11-11 17:50:01 +0100
+Processing by PublicController#articles as HTML
+  [1m[36mPage Load (1.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."visible" = ? ORDER BY "pages"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendering public/articles.html.erb within layouts/public
+  Rendered public/articles.html.erb within layouts/public (3.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (10.0ms)
+Completed 200 OK in 311ms (Views: 267.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:50:02 +0100
+Started GET "/assets/loading.gif" for ::1 at 2016-11-11 17:50:02 +0100
+Started GET "/assets/prev.png" for ::1 at 2016-11-11 17:50:02 +0100
+Started GET "/assets/close.png" for ::1 at 2016-11-11 17:50:02 +0100
+Started GET "/assets/bg3.jpg" for ::1 at 2016-11-11 17:50:02 +0100
+Started GET "/assets/next.png" for ::1 at 2016-11-11 17:50:02 +0100
+Started GET "/admin" for ::1 at 2016-11-11 17:50:05 +0100
+Processing by AccessController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :check_login rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-11-11 17:50:05 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (2.0ms)
+Completed 200 OK in 245ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:50:06 +0100
+Started GET "/assets/close.png" for ::1 at 2016-11-11 17:50:06 +0100
+Started GET "/assets/loading.gif" for ::1 at 2016-11-11 17:50:06 +0100
+Started GET "/assets/next.png" for ::1 at 2016-11-11 17:50:06 +0100
+Started GET "/assets/prev.png" for ::1 at 2016-11-11 17:50:06 +0100
+Started POST "/access/logging" for ::1 at 2016-11-11 17:50:13 +0100
+Processing by AccessController#logging as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gfdVH2lWzAEa/ox9K5c70Z4WbU2dLuMw3Fcr8BEH/UalBBAXFW+285zy60/erxkSbBJCMdyI8e+FshJ2nEXt3w==", "user"=>"admin", "password"=>"[FILTERED]", "commit"=>"Zaloguj"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."user" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["user", "admin"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 39ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/admin" for ::1 at 2016-11-11 17:50:13 +0100
+Processing by AccessController#index as HTML
+  Rendering access/index.html.erb within layouts/admin
+  Rendered access/index.html.erb within layouts/admin (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 280ms (Views: 251.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/next.png" for ::1 at 2016-11-11 17:50:14 +0100
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:50:14 +0100
+Started GET "/assets/loading.gif" for ::1 at 2016-11-11 17:50:14 +0100
+Started GET "/assets/prev.png" for ::1 at 2016-11-11 17:50:14 +0100
+Started GET "/assets/close.png" for ::1 at 2016-11-11 17:50:14 +0100
+Started GET "/access/logout" for ::1 at 2016-11-11 17:50:16 +0100
+Processing by AccessController#logout as HTML
+Redirected to http://localhost:3000/access/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for ::1 at 2016-11-11 17:50:16 +0100
+Processing by AccessController#login as HTML
+  Rendering access/login.html.erb within layouts/admin
+  Rendered access/login.html.erb within layouts/admin (2.0ms)
+Completed 200 OK in 239ms (Views: 213.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:50:17 +0100
+Started GET "/" for ::1 at 2016-11-11 17:50:20 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (21.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (10.0ms)
+Completed 200 OK in 292ms (Views: 261.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bg.jpg" for ::1 at 2016-11-11 17:50:21 +0100
+Started GET "/assets/bg2.jpg" for ::1 at 2016-11-11 17:50:21 +0100
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:50:21 +0100
+Started GET "/assets/alfa.ttf" for ::1 at 2016-11-11 17:50:21 +0100
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from require at bin/rails:4)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+Started GET "/" for ::1 at 2016-11-11 17:57:29 +0100
+DEPRECATION WARNING: Using a dynamic :controller segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: Using a dynamic :action segment in a route is deprecated and will be removed in Rails 5.1. (called from block in <top (required)> at C:/Ruby22-x64/kot/AlfaRomeo-228bf760808b051b22e5bf2de83a281c90ce3259/config/routes.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (85.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (31.0ms)
+Completed 200 OK in 5101ms (Views: 4986.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/bg.jpg" for ::1 at 2016-11-11 17:57:36 +0100
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 17:57:36 +0100
+Started GET "/assets/alfa.ttf" for ::1 at 2016-11-11 17:57:36 +0100
+Started GET "/assets/bg2.jpg" for ::1 at 2016-11-11 17:57:36 +0100
+Started GET "/public/" for ::1 at 2016-11-11 18:01:10 +0100
+Processing by PublicController#index as HTML
+  Rendering public/index.html.erb within layouts/public
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."visible" = ? ORDER BY articles.created_at DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 3]]
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY galleries.created_at DESC[0m  [["visible", true]]
+  Rendered public/index.html.erb within layouts/public (18.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (9.0ms)
+Completed 200 OK in 305ms (Views: 273.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 18:01:11 +0100
+Started GET "/assets/alfa.ttf" for ::1 at 2016-11-11 18:01:11 +0100
+Started GET "/assets/bg.jpg" for ::1 at 2016-11-11 18:01:11 +0100
+Started GET "/assets/bg2.jpg" for ::1 at 2016-11-11 18:01:11 +0100
+Started GET "/public/articles" for ::1 at 2016-11-11 18:01:12 +0100
+Processing by PublicController#articles as HTML
+  [1m[36mPage Load (1.0ms)[0m  [1m[34mSELECT  "pages".* FROM "pages" WHERE "pages"."visible" = ? ORDER BY "pages"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendering public/articles.html.erb within layouts/public
+  Rendered public/articles.html.erb within layouts/public (3.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (10.0ms)
+Completed 200 OK in 325ms (Views: 260.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 18:01:13 +0100
+Started GET "/assets/bg3.jpg" for ::1 at 2016-11-11 18:01:13 +0100
+Started GET "/public/galleries?gallery_id=1" for ::1 at 2016-11-11 18:01:14 +0100
+Processing by PublicController#galleries as HTML
+  Parameters: {"gallery_id"=>"1"}
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering public/galleries.html.erb within layouts/public
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."gallery_id" = ?[0m  [["gallery_id", 1]]
+  Rendered public/galleries.html.erb within layouts/public (258.0ms)
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (12.0ms)
+Completed 200 OK in 553ms (Views: 514.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 18:01:15 +0100
+Started GET "/assets/bg3.jpg" for ::1 at 2016-11-11 18:01:16 +0100
+Started GET "/public/galleries?gallery_id=6" for ::1 at 2016-11-11 18:01:17 +0100
+Processing by PublicController#galleries as HTML
+  Parameters: {"gallery_id"=>"6"}
+  [1m[36mGallery Load (2.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering public/galleries.html.erb within layouts/public
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."gallery_id" = ?[0m  [["gallery_id", 6]]
+  Rendered public/galleries.html.erb within layouts/public (9.0ms)
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (11.0ms)
+Completed 200 OK in 278ms (Views: 248.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 18:01:18 +0100
+Started GET "/assets/bg3.jpg" for ::1 at 2016-11-11 18:01:18 +0100
+Started GET "/public/categories?category_id=1" for ::1 at 2016-11-11 18:01:19 +0100
+Processing by PublicController#categories as HTML
+  Parameters: {"category_id"=>"1"}
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering public/categories.html.erb within layouts/public
+  [1m[36mPage Load (1.0ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."category_id" = ? AND "pages"."visible" = ?[0m  [["category_id", 1], ["visible", true]]
+  Rendered public/categories.html.erb within layouts/public (14.0ms)
+  [1m[36mGallery Load (1.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (10.0ms)
+Completed 200 OK in 290ms (Views: 257.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 18:01:20 +0100
+Started GET "/assets/bg3.jpg" for ::1 at 2016-11-11 18:01:20 +0100
+Started GET "/public/categories?category_id=3" for ::1 at 2016-11-11 18:01:21 +0100
+Processing by PublicController#categories as HTML
+  Parameters: {"category_id"=>"3"}
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering public/categories.html.erb within layouts/public
+  [1m[36mPage Load (0.0ms)[0m  [1m[34mSELECT "pages".* FROM "pages" WHERE "pages"."category_id" = ? AND "pages"."visible" = ?[0m  [["category_id", 3], ["visible", true]]
+  Rendered public/categories.html.erb within layouts/public (7.0ms)
+  [1m[36mGallery Load (0.0ms)[0m  [1m[34mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."visible" = ? ORDER BY "galleries"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."visible" = ? ORDER BY "categories"."id" DESC LIMIT ?[0m  [["visible", true], ["LIMIT", 10]]
+  Rendered public/_menu.html.erb (9.0ms)
+Completed 200 OK in 278ms (Views: 247.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bg3.jpg" for ::1 at 2016-11-11 18:01:22 +0100
+Started GET "/assets/logo.png" for ::1 at 2016-11-11 18:01:22 +0100
