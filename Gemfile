@@ -2,8 +2,14 @@ source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+   gem 'sqlite3'    #gem to use in development environment
+end
+
+group :production do
+  gem 'pg'         #gem to use in production environment
+    gem "activerecord-postgresql-adapter"
+end
 # Devise
 gem 'devise'
 gem 'cancancan'
@@ -50,4 +56,3 @@ group :development do
 
     gem 'mime-types', '2.6.2'
 end
-
