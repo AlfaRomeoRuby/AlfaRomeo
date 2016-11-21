@@ -3,6 +3,11 @@
 <section id="top3">
     <div class="container">
         <div class="row">
+            <% if !flash[:danger].blank? %>
+            <div class="alert alert-danger text-center">
+                <%= flash[:danger] %>
+            </div>
+            <% end %>
             <div class="col-lg-12 main_header">
                 <h1>Alfa Romeo</h1>
             </div>

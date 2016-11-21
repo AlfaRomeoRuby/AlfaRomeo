@@ -1,18 +1,0 @@
-{:uriI"×file:///C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/ckeditor_rails-4.5.10/vendor/assets/javascripts/ckeditor/plugins/preview/preview.html?type=text/html&id=1f1762532952117e1de63509a8ee7d9369bafac94eb603ce6a4be3c6db0d0d99:ET:load_pathI"[C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/ckeditor_rails-4.5.10/vendor/assets/javascripts;T:filenameI"|C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/ckeditor_rails-4.5.10/vendor/assets/javascripts/ckeditor/plugins/preview/preview.html;T:	nameI"%ckeditor/plugins/preview/preview;T:logical_pathI"*ckeditor/plugins/preview/preview.html;T:content_typeI"text/html;T:sourceI"ö<script>
-
-// Prevent from DOM clobbering.
-if ( typeof window.opener._cke_htmlToLoad == 'string' ) {
-	var doc = document;
-	doc.open();
-	doc.write( window.opener._cke_htmlToLoad );
-	doc.close();
-
-	delete window.opener._cke_htmlToLoad;
-}
-
-</script>
-;T:metadata{	:dependencieso:Set:
-@hash{
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"‹file-digest:///C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/ckeditor_rails-4.5.10/vendor/assets/javascripts/ckeditor/plugins/preview/preview.html;TT:charsetI"
-utf-8;F:digest"%Ø½Ëœßy™†ì¢€;jF>îç`¨Ø—hvêf…:lengthiö:dependencies_digest"%÷PAİé9ÓÎºØ¬:?kÿ¼ÍÛå-Ãn%am»i}:idI"E1f1762532952117e1de63509a8ee7d9369bafac94eb603ce6a4be3c6db0d0d99;F:
-mtimel+ÍÙ%X

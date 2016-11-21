@@ -159,6 +159,38 @@ a.logo {
     margin-top: 30px;
 }
 
+.gallery-wrapper {
+  padding-bottom: 50px;
+}
+
+.comments-wrapper {
+  margin-top: 50px;
+  padding: 20px 50px;
+}
+
+.comment-inputs {
+  margin-top: 30px;
+}
+
+.comment-inputs input {
+  margin-top: 15px;
+}
+
+.comment-content {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+
+.comment-error {
+  margin-top: 30px;
+}
+
+.comment-error p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* RESPONSIVE */
 
 @media(min-width: 1200px) and (max-width:1600px) {

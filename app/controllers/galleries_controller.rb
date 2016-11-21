@@ -5,6 +5,7 @@ class GalleriesController < ApplicationController
 
     def index
         @gallery = Gallery.sort
+        @galleries = Gallery.all
     end
 
     def new
@@ -25,6 +26,7 @@ class GalleriesController < ApplicationController
 
     def show
         @gallery = Gallery.find(params[:id])
+        @comments = Comment.where(gallery_id: @gallery).order("created_at DESC")
     end
 
     def edit

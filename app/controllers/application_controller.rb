@@ -27,8 +27,9 @@ class ApplicationController < ActionController::Base
        if current_user && current_user.admin_role?
            return true
        else
-           flash[:warning] = "Nie jesteś zalogowany!"
-           redirect_to(controller: 'users', action: 'sign_in')
+           flash[:danger] = "Nie jesteś zalogowany jako administrator!"
+           redirect_to(controller: 'public')
+          #  redirect_to(controller: 'users', action: 'sign_in')
            return false
        end
    end

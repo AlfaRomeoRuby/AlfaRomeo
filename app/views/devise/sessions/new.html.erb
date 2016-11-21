@@ -1,7 +1,11 @@
 <section id="content">
     <div class="container">
         <div class="row text-center">
-
+          <% if !flash[:danger].blank? %>
+    			<div class="alert alert-danger text-center">
+    				<%= flash[:danger] %>
+    			</div>
+    			<% end %>
             <h2>Zaloguj się</h2>
 
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
