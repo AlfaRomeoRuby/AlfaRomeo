@@ -1,0 +1,48 @@
+I, [2016-09-13T13:37:25.662401 #45393]  INFO -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] Started GET "/" for 79.139.61.157 at 2016-09-13 13:37:25 +0200
+F, [2016-09-13T13:37:25.663206 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c]   
+F, [2016-09-13T13:37:25.663284 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2016-09-13T13:37:25.663336 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c]   
+F, [2016-09-13T13:37:25.663380 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+F, [2016-09-13T13:37:25.663427 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+F, [2016-09-13T13:37:25.663469 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+F, [2016-09-13T13:37:25.663509 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+F, [2016-09-13T13:37:25.663554 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+F, [2016-09-13T13:37:25.663601 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+F, [2016-09-13T13:37:25.663645 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+F, [2016-09-13T13:37:25.663690 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+F, [2016-09-13T13:37:25.663732 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+F, [2016-09-13T13:37:25.663796 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+F, [2016-09-13T13:37:25.663843 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+F, [2016-09-13T13:37:25.663885 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+F, [2016-09-13T13:37:25.663926 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+F, [2016-09-13T13:37:25.663970 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+F, [2016-09-13T13:37:25.664012 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+F, [2016-09-13T13:37:25.664052 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+F, [2016-09-13T13:37:25.664097 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+F, [2016-09-13T13:37:25.664139 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+F, [2016-09-13T13:37:25.664179 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+F, [2016-09-13T13:37:25.664223 #45393] FATAL -- : [8c7a2cd4-a35f-4930-b608-39a3be602d1c] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2016-09-13T13:42:46.143187 #45393]  INFO -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] Started GET "/" for 79.139.61.157 at 2016-09-13 13:42:46 +0200
+F, [2016-09-13T13:42:46.143910 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425]   
+F, [2016-09-13T13:42:46.144011 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2016-09-13T13:42:46.144070 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425]   
+F, [2016-09-13T13:42:46.144123 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+F, [2016-09-13T13:42:46.144179 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+F, [2016-09-13T13:42:46.144229 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+F, [2016-09-13T13:42:46.144278 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+F, [2016-09-13T13:42:46.144332 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+F, [2016-09-13T13:42:46.144380 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+F, [2016-09-13T13:42:46.144428 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+F, [2016-09-13T13:42:46.144480 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+F, [2016-09-13T13:42:46.144528 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+F, [2016-09-13T13:42:46.144575 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+F, [2016-09-13T13:42:46.144636 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+F, [2016-09-13T13:42:46.144685 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+F, [2016-09-13T13:42:46.144736 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+F, [2016-09-13T13:42:46.144784 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+F, [2016-09-13T13:42:46.144840 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+F, [2016-09-13T13:42:46.144888 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+F, [2016-09-13T13:42:46.144951 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:152:in `accept_and_process_next_request'
+F, [2016-09-13T13:42:46.145005 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+F, [2016-09-13T13:42:46.145054 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+F, [2016-09-13T13:42:46.145111 #45393] FATAL -- : [5ddec0e9-798d-45e3-b5ee-c948e3816425] /usr/local/lib/ruby/gems/2.2/gems/passenger-5.0.29/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
