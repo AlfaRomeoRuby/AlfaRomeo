@@ -23,13 +23,13 @@ class ApplicationController < ActionController::Base
 
   #  private
 
-  #  def check_login
-  #      if session[:user_id]
-   #         return true
-  #      else
-  #          flash[:warning] = "Nie jesteś zalogowany!"
-  #          redirect_to(controller: 'access', action: 'login')
-  #          return false
-  #      end
-  #  end
+   def check_login
+       if current_user && current_user.admin_role?
+           return true
+       else
+           flash[:warning] = "Nie jesteś zalogowany!"
+           redirect_to(controller: 'users', action: 'sign_in')
+           return false
+       end
+   end
 end
