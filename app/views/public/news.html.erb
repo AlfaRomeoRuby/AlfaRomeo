@@ -1,6 +1,11 @@
 <% @page_title = @article.name %>
 <section id="content">
     <div class="container">
+      <% if !flash[:success].blank? %>
+      <div class="alert alert-success text-center">
+        <%= flash[:success] %>
+      </div>
+      <% end %>
         <h2><%= @article.name %></h2>
         <div class="article">
             <div class="row">
@@ -10,10 +15,14 @@
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <p><%= raw(@article.content) %></p>
                     <hr/>
-                    <p><%= link_to("wstecz", {:controller => 'public', :action => 'index'}, :class => 'btn btn-info') %>
-                    </p>
                 </div>
             </div>
         </div>
+        <hr />
+        <%= render partial: "comments/comments", locals: {commentable: @article} %>
+        <%= render partial: "comments/form", locals: {commentable: @article} %>
+        <hr />
+        <p><%= link_to("wstecz", {:controller => 'public', :action => 'index'}, :class => 'btn btn-info') %>
+        </p>
     </div>
 </section>

@@ -1,12 +1,22 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :galleries do
-    resources :comments
-  end
+
+    devise_for :users
+
+
+    resources :galleries do
+        resources :comments, module: :galleries
+    end
+    resources :articles do
+        resources :comments, module: :articles
+    end
+
+    match ':controller(/:action(/:id))(.:format)', via: [:post, :get]
+
+
     root 'public#index'
     get 'admin', to: 'access#index'
     # match ':controller(/:action(/:id))', :via => [:get, :post]
-    match ':controller(/:action(/:id))(.:format)', via: [:post, :get]
+
     # The priority is based upon order of creation: first created -> highest priority.
     # See how all your routes lay out with "rake routes".
 

@@ -4,6 +4,11 @@
     <div class="container">
         <div class="article">
             <div class="gallery-wrapper">
+              <% if !flash[:success].blank? %>
+              <div class="alert alert-success text-center">
+                <%= flash[:success] %>
+              </div>
+              <% end %>
                 <h2><%= @gallery.name %></h2>
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -28,12 +33,8 @@
                 </div>
             </div>
             <hr/>
-            <div class="comments-wrapper">
-                <div class="row">
-                    <h2>Komentarze:</h2>
-                    <%= render 'comments/comment' %>
-                </div>
-            </div>
+            <%= render partial: "comments/comments", locals: {commentable: @gallery} %>
+            <%= render partial: "comments/form", locals: {commentable: @gallery} %>
             <hr/>
             <p><%= link_to("wstecz", {:controller => 'public', :action => 'index'}, :class => 'btn btn-info') %></p>
 

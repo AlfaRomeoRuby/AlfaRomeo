@@ -12,6 +12,8 @@ group :production do
 end
 # Devise
 gem 'devise'
+gem 'devise-i18n-views'
+gem 'rails-i18n'
 gem 'cancancan'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Use SCSS for stylesheets

@@ -53,7 +53,7 @@ class GalleriesController < ApplicationController
         gallery = Gallery.find(params[:id]).destroy
         flash[:success] = "Galeria '#{gallery.name}' została poprawnie usunięta"
         redirect_to(action: 'index')
-  end
+    end
 
     def gallery_parameters
         params.require(:gallery).permit(:name, :position, :visible, :description, :photo)

@@ -1,16 +1,26 @@
-<h2>Resend unlock instructions</h2>
+<section id="content">
 
-<%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+    <div class="container">
+        <div class="row text-center">
+            <% if !flash[:danger].blank? %>
+            <div class="alert alert-danger text-center">
+                <%= flash[:danger] %>
+            </div>
+            <% end %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+            <h2><%= t('.resend_unlock_instructions', :default => "Resend unlock instructions") %></h2>
 
-  <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
-  </div>
-<% end %>
+            <%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f| %>
+            <%= devise_error_messages! %>
 
-<%= render "devise/shared/links" %>
+            <div><%= f.label :email %><br/>
+                <%= f.email_field :email %></div>
+
+            <div><%= f.submit t('.resend_unlock_instructions', :default => "Resend unlock instructions") %></div>
+            <% end %>
+
+            <%= render "devise/shared/links" %>
+
+        </div>
+    </div>
+</section>

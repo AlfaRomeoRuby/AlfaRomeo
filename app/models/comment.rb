@@ -1,4 +1,4 @@
-class Comment < ApplicationRecord
-  belongs_to :gallery
-  belongs_to :user
+class Comment < ActiveRecord::Base
+    belongs_to :commentable, polymorphic: true
+    belongs_to :user 
 end

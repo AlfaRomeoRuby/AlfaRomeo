@@ -1,0 +1,27 @@
+<div class="comments-wrapper">
+    <div class="row">
+        <h2>Komentarze:</h2>
+        <% commentable.comments.each do |comment| %>
+        <div class="col-xs-12">
+          <div class="comment-content">
+              <p>
+                  <strong>Data dodania:
+                  </strong>
+                  <%= comment.created_at.strftime("%b %d, %Y") %>
+              </p>
+              <p>
+                  <strong>Autor:
+                  </strong>
+                  <%= comment.user.email %>
+
+              </p>
+              <p>
+                  <strong>Komentarz:
+                  </strong>
+                  <%= comment.body %>
+              </p>
+          </div>
+        </div>
+        <% end %>
+    </div>
+</div>

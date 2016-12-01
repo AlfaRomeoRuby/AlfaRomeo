@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
             @page = Page.order('position ASC')
             render('edit')
         end
-      end
+    end
 
     def delete
         @article = Article.find(params[:id])

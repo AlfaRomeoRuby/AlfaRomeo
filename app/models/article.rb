@@ -1,5 +1,7 @@
 class Article < ActiveRecord::Base
     belongs_to :page
+    has_many :comments, as: :commentable
+
 
     has_attached_file :photo, styles: { medium: '500x500>', thumb: '250x250>' }
     validates_attachment_content_type :photo, content_type: /\Aimage\/(png|gif|jpeg)/,
